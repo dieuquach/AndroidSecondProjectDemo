@@ -8,13 +8,16 @@ import android.view.View;
 import android.widget.TextView;
 
 public class HomeActivity extends AppCompatActivity {
-    TextView text_view_hello, text_view_email, text_view_password;
+    private TextView text_view_hello, text_view_email, text_view_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        showInfoUser();
+    }
 
+    public void showInfoUser(){
         text_view_hello = (TextView) findViewById(R.id.text_view_hello);
         text_view_email = (TextView) findViewById(R.id.text_view_email);
         text_view_password = (TextView) findViewById(R.id.text_view_password);
